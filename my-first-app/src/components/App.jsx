@@ -1,19 +1,14 @@
 import painting from '../painting.json'
-import { GalleryItem } from './GaleryItem/Gallery';
+import { Container } from './Container/Container';
+import { GalleryList } from "./GalleryList/GalleryList";
 
-const item = painting[0];
 
 export const App = () => {
   return (
-  <div>
-      <GalleryItem
-        itemUrl={item.url}
-        title={item.title}
-        author={item.author.url}
-        price={item.price}
-        quantity={item.quantity}
-        tag={item.author.tag}
-      />
-  </div>
-  )
-}
+    <>
+      <Container title="Title">
+        <GalleryList items={painting} />
+      </Container>
+  </>
+  );
+};
