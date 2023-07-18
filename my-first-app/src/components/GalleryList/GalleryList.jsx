@@ -1,4 +1,3 @@
-
 import { GalleryItem } from "../GaleryItem/GalleryItem"
 
 export function GalleryList({items}) {
